@@ -1,0 +1,14 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RemiAntoineApp.Tab3Page"
+             Title="Onglet 3">
+    <VerticalStackLayout>
+        <Label Text="Bienvenue dans l'onglet 3!"
+               VerticalOptions="Center" 
+               HorizontalOptions="Center" />
+		<Image Source="aurore.jpg"
+               Aspect="AspectFit"
+               HeightRequest="200"
+               WidthRequest="200" />
+    </VerticalStackLayout>
+</ContentPage>
