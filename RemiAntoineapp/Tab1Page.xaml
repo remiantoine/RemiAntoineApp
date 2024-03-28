@@ -1,14 +1,21 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="RemiAntoineApp.Tab1Page"
-             Title="Onglet 1">
+             Title="Page d'accueil">
     <VerticalStackLayout>
-        <Label Text="Bienvenue dans l'onglet 1!"
+        <Label Text="Bienvenue sur la page d'accueil"
                VerticalOptions="Center" 
                HorizontalOptions="Center" />
-		<Image Source="aurore.jpg"
-               Aspect="AspectFit"
-               HeightRequest="200"
-               WidthRequest="200" />
+        <HorizontalStackLayout>
+            <Image Source="aurore.jpg"
+                   Aspect="AspectFit"
+                   HeightRequest="200"
+                   WidthRequest="200" />
+            <Image Source="spaceship.jpg"
+                   Aspect="AspectFit"
+                   HeightRequest="200"
+                   WidthRequest="200" />
+        </HorizontalStackLayout>
+        
     </VerticalStackLayout>
 </ContentPage>
