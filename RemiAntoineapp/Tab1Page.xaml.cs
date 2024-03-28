@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.Maui.Controls;
 
 namespace RemiAntoineApp
 {
@@ -12,7 +13,11 @@ namespace RemiAntoineApp
         {
             InitializeComponent();
         }
-
+        private async void PlayButton_Clicked(object sender, EventArgs e)
+        {
+            // Navigation vers la nouvelle page
+            await Shell.Current.Navigation.PushAsync(new GifPage());
+        }
 
     }
 

@@ -16,6 +16,8 @@
                    HeightRequest="200"
                    WidthRequest="200" />
         </HorizontalStackLayout>
-        
+        <ImageButton x:Name="playButton"
+                     Source="bouton.jpg"
+                     Clicked="PlayButton_Clicked"/>
     </VerticalStackLayout>
 </ContentPage>

@@ -47,6 +47,8 @@
 		<MauiAsset Include="Resources\Raw\**" LogicalName="%(RecursiveDir)%(Filename)%(Extension)" />
 		<None Remove="Resources\AppIcon\appicon.svg" />
 		<None Remove="Resources\AppIcon\appiconfg.svg" />
+		<None Remove="Resources\Images\bouton.jpg" />
+		<None Remove="Resources\Images\goat.gif" />
 		<None Remove="Resources\Images\spaceship.jpg" />
 		<MauiIcon Include="Resources\AppIcon\appicon.svg" />
 		<MauiIcon Include="Resources\AppIcon\appiconfg.svg" />
@@ -61,6 +63,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Update="GifPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Tab1Page.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
