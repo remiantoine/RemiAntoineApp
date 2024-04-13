@@ -1,6 +1,8 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             
              x:Class="RemiAntoineApp.Tab1Page"
+             
              Title="Page d'accueil">
     <VerticalStackLayout>
         <Label Text="Bienvenue sur la page d'accueil"
@@ -19,5 +21,7 @@
         <ImageButton x:Name="playButton"
                      Source="bouton.jpg"
                      Clicked="PlayButton_Clicked"/>
+        
+
     </VerticalStackLayout>
 </ContentPage>

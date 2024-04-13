@@ -19,6 +19,7 @@ namespace RemiAntoineApp
             await Shell.Current.Navigation.PushAsync(new GifPage());
         }
 
+
     }
 
 }

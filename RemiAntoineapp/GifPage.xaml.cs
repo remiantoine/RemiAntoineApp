@@ -1,13 +1,14 @@
 ﻿using Microsoft.Maui.Controls;
 using System.Timers;
 using Timer = System.Timers.Timer;
-
-namespace RemiAntoineapp
+using System.Threading.Tasks;
+namespace RemiAntoineApp
 {
-    internal class GifPage : ContentPage
+    public partial class GifPage : ContentPage
     {
         public GifPage()
         {
+            InitializeComponent();
 
             StartTimer();
         }
@@ -26,6 +27,14 @@ namespace RemiAntoineapp
             };
             timer.AutoReset = false; // S'assure que la minuterie ne se répète pas
             timer.Start();
+        }
+        protected override async void OnAppearing()
+        {
+            base.OnAppearing();
+            await Task.Delay(100);
+            GifImage.IsAnimationPlaying = false;
+            await Task.Delay(100);
+            GifImage.IsAnimationPlaying = true;
         }
     }
 }
